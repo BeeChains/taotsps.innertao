@@ -89,17 +89,23 @@ if __name__ == "__main__":
     model = TSPSModel(input_size=1, hidden_layer_size=config['model_params']['hidden_layer_size'], output_size=1)
     train_model(model, train_inout_seq, epochs=150, lr=config['model_params']['learning_rate'])
 
-# Example function to interact with Bittensor network
-def query_bittensor_network():
-    # Initialize a Bittensor wallet, neuron, etc.
-    # Example query to the Bittensor network
-    # Process and return the response
+# Example setup for a Bittensor Subnet
+def initialize_bittensor_subnet():
+    # Initialize Bittensor components (wallet, neuron, etc.)
+    # Set up the neuron's axon and dendrite for communication
+    # Register subnet on the Bittensor network
+    # ...
+
+# Bittensor network interaction logic
+def interact_with_bittensor_network():
+    # Logic for serving predictions, validating transactions, or processing data
+    # ...
 
 # Main execution
 if __name__ == "__main__":
-    # Example of using Bittensor for data fetching or model interaction
-    bittensor_response = query_bittensor_network()
+    # Initialize Bittensor Subnet
+    initialize_bittensor_subnet()
 
-    # Use the response in your TSPS model logic
-
-    # Model can be saved or used for predictions here
+    # Main loop for network interaction
+    while True:
+        interact_with_bittensor_network()
