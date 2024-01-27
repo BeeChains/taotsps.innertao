@@ -1,5 +1,9 @@
 {
   "api_key": "YOUR_ALPHA_VANTAGE_API_KEY",
+  "bittensor_config": {
+    "wallet_name": "your_wallet_name",
+    "network": "mainnet"  // Or other network configurations
+  },
   "model_params": {
     "hidden_layer_size": 100,
     "learning_rate": 0.001,
@@ -9,3 +13,4 @@
     "symbol": "TAO"
   }
 }
+
