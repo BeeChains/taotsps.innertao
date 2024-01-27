@@ -13,8 +13,8 @@ User-friendly interface for easy interaction.
 Installation
 
 Clone the Repository:
-```git clone https://github.com/YourGitHub/TAO-TSPS.git```
-```cd TAO-TSPS```
+```git clone https://github.com/BeeChains/taotsps.innertao.git```
+```cd taotsps.innertao```
 
 Set Up Environment:
 ```python -m venv tsp-env``` 
