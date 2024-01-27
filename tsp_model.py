@@ -75,37 +75,34 @@ def train_model(model, train_data, epochs=150, lr=0.001):
         if i % 25 == 1:
             print(f'epoch {i} loss: {single_loss.item()}')
 
-# Main execution
-if __name__ == "__main__":
-    # Fetch and preprocess data
-    tao_data = fetch_tao_data(API_KEY, symbol="TAO")
-    tao_data_normalized, scaler = preprocess_data(tao_data)
-
-    # Prepare training data
-    train_window = 12  # This can be adjusted
-    train_inout_seq = create_sequences(tao_data_normalized, train_window)
-
-    # Initialize and train the model
-    model = TSPSModel(input_size=1, hidden_layer_size=config['model_params']['hidden_layer_size'], output_size=1)
-    train_model(model, train_inout_seq, epochs=150, lr=config['model_params']['learning_rate'])
-
-# Example setup for a Bittensor Subnet
+# Bittensor Subnet Initialization
 def initialize_bittensor_subnet():
-    # Initialize Bittensor components (wallet, neuron, etc.)
-    # Set up the neuron's axon and dendrite for communication
-    # Register subnet on the Bittensor network
-    # ...
+    # Placeholder for initializing Bittensor components (wallet, neuron, etc.)
+    print("Initializing Bittensor Subnet...")
+    # Actual initialization logic goes here
 
-# Bittensor network interaction logic
-def interact_with_bittensor_network():
-    # Logic for serving predictions, validating transactions, or processing data
-    # ...
+# Bittensor Network Interaction
+def interact_with_bittensor_network(model):
+    # Placeholder for TSPS's interaction logic with the Bittensor network
+    print("Interacting with Bittensor Network...")
+    # Actual interaction logic goes here
 
 # Main execution
 if __name__ == "__main__":
     # Initialize Bittensor Subnet
     initialize_bittensor_subnet()
 
-    # Main loop for network interaction
-    while True:
-        interact_with_bittensor_network()
+    # Fetch and preprocess data
+    tao_data = fetch_tao_data(API_KEY, symbol="TAO")
+    tao_data_normalized, scaler = preprocess_data(tao_data)
+
+    # Prepare training data
+    train_window = config['model_params']['train_window']
+    train_inout_seq = create_sequences(tao_data_normalized, train_window)
+
+    # Initialize and train the model
+    model = TSPSModel(input_size=1, hidden_layer_size=config['model_params']['hidden_layer_size'], output_size=1)
+    train_model(model, train_inout_seq, epochs=150, lr=config['model_params']['learning_rate'])
+
+    # Interact with Bittensor Network
+    interact_with_bittensor_network(model)
