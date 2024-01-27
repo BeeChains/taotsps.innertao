@@ -34,7 +34,23 @@ Advanced Configuration:
 
 Modify config.json or tsp_model.py for advanced model configurations.
 
-We welcome contributions to the TAO TSPS project! Please follow these steps:
+In this config.json file:
+
+"api_key": Replace ```"YOUR_ALPHA_VANTAGE_API_KEY"``` with the actual API key you obtain from Alpha Vantage.
+"model_params": Here you can configure the parameters of the LSTM model, like hidden_layer_size, learning_rate, and the size of the training window (train_window).
+"data_params": This section can be used to specify data-related parameters, such as the symbol for the cryptocurrency ("TAO" for "$TAO" in this case).
+The config.json file allows you to easily change the configuration of your TSPS application without modifying the Python code.
+
+Obtaining an API Key:
+Visit the Alpha Vantage Website: Go to [Alpha Vantage](https://www.alphavantage.co/).
+Sign Up for an API Key: Usually, you will find a section for getting a free API key. Click on it and fill in the necessary details.
+Retrieve Your API Key: After registration, Alpha Vantage will provide you with an API key. This key will be used to make requests to their service.
+
+Using the API Key in Your Application:
+
+Store the API Key Securely: Never hard-code your API key directly into your scripts (especially if you're sharing your code publicly). Instead, store it in a separate configuration file or use environment variables.
+
+We welcome contributions to the TAO TSPS InnerTAO project! Please follow these steps:
 
 Fork the Repository: Click on the 'Fork' button at the top right of the page.
 Create a Feature Branch: git checkout -b new-feature
