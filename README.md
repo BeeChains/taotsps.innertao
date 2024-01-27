@@ -54,7 +54,8 @@ Using the API Key in Your Application:
 
 Store the API Key Securely: Never hard-code your API key directly into your scripts (especially if you're sharing your code publicly). Instead, store it in a separate configuration file or use environment variables.
 
-We welcome contributions to the TAO TSPS InnerTAO project! Please follow these steps:
+Contributions to TAO TSPS InnerTAO are welcome, especially in areas like model optimization, data sources, and Bittensor integration.
+Please follow these steps:
 
 Fork the Repository: Click on the 'Fork' button at the top right of the page.
 
