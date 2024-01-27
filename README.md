@@ -1,6 +1,8 @@
 # taotsps.innertao
 TAOTSPS.InnerTAO
 
+## ⚠ Not Tested, RUN AT YOUR OWN RISk 🛑 This is an idea project... 💡
+
 Overview
 The TAO Time-Series Prediction Subnet (TSPS) is a sophisticated tool designed for forecasting trends in the cryptocurrency market, with a primary focus on Bittensor ($TAO). It leverages advanced machine learning techniques, especially LSTM (Long Short-Term Memory) networks, to predict future market movements based on historical data.
 
